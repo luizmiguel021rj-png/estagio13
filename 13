@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Prática de Web Design: Lista ordenada e não ordenada</title>
+</head>
+<body>
+
+    <!-- Primeira Lista (Hierárquica / Aninhada) -->
+    <ol>
+        <li>Introducao
+            <ol>
+                <li>O que e HTML</li>
+                <li>O que e XHTML</li>
+                <li>O que e CSS</li>
+            </ol>
+        </li>
+        <li>Basico
+            <ol>
+                <li>Como se criar um site ?</li>
+                <li>Que programas sao necessarios para se criar um site ?
+                    <ul>
+                        <li>Bloco de notas</li>
+                        <li>Notapad++</li>
+                        <li>Dreamweaver</li>
+                    </ul>
+                </li>
+                <li>Com criar seu primeiro site - "Ola mundo!"</li>
+            </ol>
+        </li>
+    </ol>
+
+    <hr>
+
+    <!-- Segunda Lista (Com letras de A a E) -->
+    <ol type="A">
+        <li>CSS</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>HTML 5.0</li>
+        <li>MySQL (Banco de dados)</li>
+    </ol>
+
+</body>
+</html>
