@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mudar Cor do Texto</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    .btn-vermelho {
+      background-color: #e57373;
+    }
+
+    .btn-verde {
+      background-color: #81c784;
+    }
+
+    .btn-azul {
+      background-color: #64b5f6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <section>
+      <h3>Interatividade: Mudando a Cor do Texto</h3>
+
+      <p id="texto-colorido">
+        Clique nos botões abaixo para mudar a cor deste texto.
+      </p>
+
+      <div class="botoes">
+        <button class="btn-vermelho" onclick="mudarCor('red')">
+          Vermelho
+        </button>
+
+        <button class="btn-verde" onclick="mudarCor('green')">
+          Verde
+        </button>
+
+        <button class="btn-azul" onclick="mudarCor('blue')">
+          Azul
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function mudarCor(cor) {
+      document.getElementById('texto-colorido').style.color = cor;
+    }
+  </script>
+
+</body>
+</html>
