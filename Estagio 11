@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pizzaria</title>
+
+  <style>
+    :root {
+      --primary-red: #8B0000;
+      --accent-yellow: #FFC107;
+      --bg-dark: #2B0000;
+      --card-bg: #FFFFFF;
+      --text-dark: #333333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--primary-red);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid var(--accent-yellow);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: #5c0000;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent-yellow);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .titulo {
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .cardapio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .produto {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+      transition: 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-7px);
+    }
+
+    .icone {
+      font-size: 80px;
+      margin-bottom: 15px;
+    }
+
+    .produto h3 {
+      color: var(--primary-red);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .produto p {
+      color: #666;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .preco {
+      color: var(--primary-red);
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: var(--primary-red);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      border-top: 4px solid var(--accent-yellow);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍕 Pizzaria</h1>
+    <p>Qualidade e sabor em cada pedido!</p>
+  </header>
+
+  <nav>
+    <a href="#cardapio">Cardápio</a>
+  </nav>
+
+  <main>
+
+    <h2 class="titulo" id="cardapio">
+      🍕 Nosso Cardápio
+    </h2>
+
+    <section class="cardapio">
+
+      <!-- BROTO -->
+      <article class="produto">
+
+        <div class="icone">🍕</div>
+
+        <h3>Broto</h3>
+
+        <p>
+          A cada 10 esfirras ganhe um refrigerante.
+        </p>
+
+        <div class="preco">
+          A partir de R$ 1,50
+        </div>
+
+      </article>
+
+
+      <!-- SUPER FATIA -->
+      <article class="produto">
+
+        <div class="icone">🍕</div>
+
+        <h3>Super Fatia</h3>
+
+        <p>
+          Super Fatia de pizza com muito recheio.
+        </p>
+
+        <div class="preco">
+          A partir de R$ 9,90
+        </div>
+
+      </article>
+
+
+      <!-- PIZZA -->
+      <article class="produto">
+
+        <div class="icone">🍕</div>
+
+        <h3>Pizza</h3>
+
+        <p>
+          Na compra de duas pizzas ganhe uma borda recheada.
+        </p>
+
+        <div class="preco">
+          A partir de R$ 40,00
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>🍕 Pizzaria</p>
+    <p>© 2026 — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
