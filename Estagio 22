@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Minha imagem Favorita</title>
+
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      margin: 50px auto;
+      padding: 25px;
+      max-width: 500px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+
+    <h1>Minha imagem Favorita</h1>
+
+    <img
+      src="https://www.seekpng.com/png/detail/416-4162738_relgio-png.png"
+      alt="Relógio infantil"
+    >
+
+    <p>
+      Esta é uma imagem de exemplo para ilustrar o uso da tag &lt;img&gt;
+    </p>
+
+  </section>
+
+</body>
+
+</html>
